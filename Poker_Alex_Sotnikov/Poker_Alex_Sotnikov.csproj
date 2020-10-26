@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{243433A6-368E-428F-811C-F1114669E047}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Poker_Alex_Sotnikov</RootNamespace>
+    <AssemblyName>Poker_Alex_Sotnikov</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileWorkClasses.cs" />
+    <Compile Include="GameControl.cs" />
+    <Compile Include="GameResetInterface.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGame.Designer.cs">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Render.cs" />
+    <Compile Include="Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table.cs" />
+    <Compile Include="TableElements.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\A-Clubs.jpg" />
+    <Content Include="Resources\A-Diamonds.jpg" />
+    <Content Include="Resources\A-Hearts.jpg" />
+    <Content Include="Resources\A-Spades.jpg" />
+    <Content Include="Resources\active.png" />
+    <Content Include="Resources\bank.png" />
+    <Content Include="Resources\diller.png" />
+    <Content Include="Resources\Eight-Clubs.jpg" />
+    <Content Include="Resources\Eight-Diamonds.jpg" />
+    <Content Include="Resources\Eight-Hearts.jpg" />
+    <Content Include="Resources\Eight-Spades.jpg" />
+    <Content Include="Resources\Five-Clubs.jpg" />
+    <Content Include="Resources\Five-Diamonds.jpg" />
+    <Content Include="Resources\Five-Hearts.jpg" />
+    <Content Include="Resources\Five-Spades.jpg" />
+    <Content Include="Resources\Four-Clubs.jpg" />
+    <Content Include="Resources\Four-Diamonds.jpg" />
+    <Content Include="Resources\Four-Hearts.jpg" />
+    <Content Include="Resources\Four-Spades.jpg" />
+    <Content Include="Resources\J-Clubs.jpg" />
+    <Content Include="Resources\J-Diamonds.jpg" />
+    <Content Include="Resources\J-Hearts.jpg" />
+    <Content Include="Resources\J-Spades.jpg" />
+    <Content Include="Resources\K-Clubs.jpg" />
+    <Content Include="Resources\K-Diamonds.jpg" />
+    <Content Include="Resources\K-Hearts.jpg" />
+    <Content Include="Resources\K-Spades.jpg" />
+    <Content Include="Resources\Nine-Clubs.jpg" />
+    <Content Include="Resources\Nine-Diamonds.jpg" />
+    <Content Include="Resources\Nine-Hearts.jpg" />
+    <Content Include="Resources\Nine-Spades.jpg" />
+    <Content Include="Resources\Q-Clubs.jpg" />
+    <Content Include="Resources\Q-Diamonds.jpg" />
+    <Content Include="Resources\Q-Hearts.jpg" />
+    <Content Include="Resources\Q-Spades.jpg" />
+    <Content Include="Resources\Rubashka.png" />
+    <Content Include="Resources\Seven-Clubs.jpg" />
+    <Content Include="Resources\Seven-Diamonds.jpg" />
+    <Content Include="Resources\Seven-Hearts.jpg" />
+    <Content Include="Resources\Seven-Spades.jpg" />
+    <Content Include="Resources\Six-Clubs.jpg" />
+    <Content Include="Resources\Six-Diamonds.jpg" />
+    <Content Include="Resources\Six-Hearts.jpg" />
+    <Content Include="Resources\Six-Spades.jpg" />
+    <Content Include="Resources\table.jpg" />
+    <Content Include="Resources\tablebank.png" />
+    <Content Include="Resources\Ten-Clubs.jpg" />
+    <Content Include="Resources\Ten-Diamonds.jpg" />
+    <Content Include="Resources\Ten-Hearts.jpg" />
+    <Content Include="Resources\Ten-Spades.jpg" />
+    <Content Include="Resources\Tree-Clubs.jpg" />
+    <Content Include="Resources\Tree-Diamonds.jpg" />
+    <Content Include="Resources\Tree-Hearts.jpg" />
+    <Content Include="Resources\Tree-Spades.jpg" />
+    <Content Include="Resources\Two-Clubs.jpg" />
+    <Content Include="Resources\Two-Diamonds.jpg" />
+    <Content Include="Resources\Two-Hearts.jpg" />
+    <Content Include="Resources\Two-Spades.jpg" />
+    <Content Include="Resources\waiting.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

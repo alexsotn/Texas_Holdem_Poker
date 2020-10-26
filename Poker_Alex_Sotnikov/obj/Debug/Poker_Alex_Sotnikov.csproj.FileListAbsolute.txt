@@ -1,0 +1,9 @@
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.csprojAssemblyReference.cache
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.MainForm.resources
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.Properties.Resources.resources
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.csproj.GenerateResource.cache
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.csproj.CoreCompileInputs.cache
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\bin\Debug\Poker_Alex_Sotnikov.exe
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\bin\Debug\Poker_Alex_Sotnikov.pdb
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.exe
+E:\Проекты C#\Neww\Poker_Alex_Sotnikov\Poker_Alex_Sotnikov\obj\Debug\Poker_Alex_Sotnikov.pdb
